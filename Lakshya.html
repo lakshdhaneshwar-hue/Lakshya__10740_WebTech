@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshya Dhaneshwar | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #f8fbff;
+            --card: #ffffff;
+            --accent: #38bdf8;
+            --accent-dark: #0ea5e9;
+            --text: #334155;
+            --muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #f8fbff, #e0f2fe);
+            color: var(--text);
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        nav h2 {
+            color: var(--accent-dark);
+            font-weight: 600;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-dark);
+        }
+
+        section {
+            padding: 120px 10%;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 18px 45px rgba(56, 189, 248, 0.18);
+            margin-bottom: 40px;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #0f172a;
+        }
+
+        .hero span {
+            color: var(--accent-dark);
+        }
+
+        .hero p {
+            margin: 20px 0;
+            color: var(--muted);
+            line-height: 1.8;
+        }
+
+        .hero img {
+            width: 280px;
+            border-radius: 50%;
+            border: 5px solid var(--accent);
+            box-shadow: 0 25px 55px rgba(56, 189, 248, 0.35);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 35px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 15px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--accent-dark);
+            transform: translateY(-2px);
+        }
+
+        h2.section-title {
+            color: var(--accent-dark);
+            margin-bottom: 25px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .box {
+            background: #f8fbff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(56, 189, 248, 0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #ffffff;
+            color: var(--muted);
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media(max-width:900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero img {
+                margin: auto;
+            }
+
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>Lakshya</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Hi, I'm <span>Lakshya Dhaneshwar</span></h1>
+            <p>
+                First Year B.Tech Computer Science Engineering student at
+                <strong>Rungta International Skill University</strong>.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="https://www.linkedin.com/in/laksh-dhaneshwar-8641b5396/" target="_blank" class="btn">
+                LinkedIn
+            </a>
+        </div>
+
+        <div>
+            <!-- Image should be inside project folder -->
+            <img src="f:\College Work\Assignment\AYUSH SINGH PORTFOLIO\WhatsApp Image 2026-01-03 at 10.03.52 PM.jpeg"
+                alt="Lakshya Dhaneshwar">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="card">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I am an enthusiastic Computer Science Engineering student focused on
+                building strong programming fundamentals and modern web skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="card">
+            <h2 class="section-title">Education</h2>
+            <p><strong>B.Tech – Computer Science Engineering</strong></p>
+            <p>Rungta International Skill University</p>
+            <p>2025 – 2029</p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="grid">
+            <div class="box">C, C++, JavaScript</div>
+            <div class="box">HTML, CSS, Responsive Design</div>
+            <div class="box">Git, GitHub, VS Code</div>
+            <div class="box">DSA Basics, OOP</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="card">Personal Portfolio Website</div>
+        <div class="card">Attendance Calculator</div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="card">
+            <h2 class="section-title">Contact</h2>
+            <p>Email: lakshdhaneshwar@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Lakshya Dhaneshwar | B.Tech CSE
+    </footer>
+
+</body>
+
+</html>
